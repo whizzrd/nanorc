@@ -1,12 +1,12 @@
 syntax "yaml" "\.ya?ml$"
 #comment "#"
-header "^---" "%YAML"
+# header "^---" "%YAML"
 
 # Values
 color green "(:|^|\s)+\S+"
 
 # Keys
-color red "(^|\s+).*+\s*:(\s|$)"
+# color red "(^|\s+).*+\s*:(\s|$)"
 
 # Special values
 color yellow "[:-]\s+(true|false|null)\s*$"
