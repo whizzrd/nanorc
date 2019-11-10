@@ -29,67 +29,67 @@
 syntax "INO"  "\.?ino$"
 
 ## 
-color brightred "\<[A-Z_][0-9A-Z_]+\>" 
+color brightred "[[:<:]][A-Z_][0-9A-Z_]+[[:>:]]" 
 
 ## 
-color green "\<((s?size)|((u_?)?int(8|16|32|64|ptr)))_t\>"
+color green "[[:<:]]((s?size)|((u_?)?int(8|16|32|64|ptr)))_t[[:>:]]"
 
 ## Constants
-icolor green "\<(HIGH|LOW|INPUT|OUTPUT)\>"
+icolor green "[[:<:]](HIGH|LOW|INPUT|OUTPUT)[[:>:]]"
 
 ## Serial Print
-icolor red "\<(DEC|BIN|HEX|OCT|BYTE)\>"
+icolor red "[[:<:]](DEC|BIN|HEX|OCT|BYTE)[[:>:]]"
 
 ## PI Constants
-icolor green "\<(PI|HALF_PI|TWO_PI)\>"
+icolor green "[[:<:]](PI|HALF_PI|TWO_PI)[[:>:]]"
 
 ## ShiftOut
-icolor green "\<(LSBFIRST|MSBFIRST)\>"
+icolor green "[[:<:]](LSBFIRST|MSBFIRST)[[:>:]]"
 
 ## Attach Interrupt
-icolor green "\<(CHANGE|FALLING|RISING)\>"
+icolor green "[[:<:]](CHANGE|FALLING|RISING)[[:>:]]"
 
 ## Analog Reference
-icolor green "\<(DEFAULT|EXTERNAL|INTERNAL|INTERNAL1V1|INTERNAL2V56)\>"
+icolor green "[[:<:]](DEFAULT|EXTERNAL|INTERNAL|INTERNAL1V1|INTERNAL2V56)[[:>:]]"
 
 ## === FUNCTIONS === ##
 
 ## Data Types
-color green "\<(boolean|byte|char|float|int|long|word)\>"
+color green "[[:<:]](boolean|byte|char|float|int|long|word)[[:>:]]"
 
 ## Control Structions
-color brightyellow "\<(case|class|default|do|double|else|false|for|if|new|null|private|protected|public|short|signed|static|String|switch|this|throw|try|true|unsigned|void|while)\>" 
-color magenta "\<(goto|continue|break|return)\>"
+color brightyellow "[[:<:]](case|class|default|do|double|else|false|for|if|new|null|private|protected|public|short|signed|static|String|switch|this|throw|try|true|unsigned|void|while)[[:>:]]" 
+color magenta "[[:<:]](goto|continue|break|return)[[:>:]]"
 
 ## Math
-color brightyellow "\<(abs|acos|asin|atan|atan2|ceil|constrain|cos|degrees|exp|floor|log|map|max|min|radians|random|randomSeed|round|sin|sq|sqrt|tan)\>"
+color brightyellow "[[:<:]](abs|acos|asin|atan|atan2|ceil|constrain|cos|degrees|exp|floor|log|map|max|min|radians|random|randomSeed|round|sin|sq|sqrt|tan)[[:>:]]"
 
 ## Bits & Bytes
-color brightyellow "\<(bitRead|bitWrite|bitSet|bitClear|bit|highByte|lowByte)\>"
+color brightyellow "[[:<:]](bitRead|bitWrite|bitSet|bitClear|bit|highByte|lowByte)[[:>:]]"
 
 ## Analog I/O
-color brightyellow "\<(analogReference|analogRead|analogWrite)\>"
+color brightyellow "[[:<:]](analogReference|analogRead|analogWrite)[[:>:]]"
 
 ## External Interrupts
-color brightyellow "\<(attachInterrupt|detachInterrupt)\>"
+color brightyellow "[[:<:]](attachInterrupt|detachInterrupt)[[:>:]]"
 
 ## Time
-color brightyellow "\<(delay|delayMicroseconds|millis|micros)\>"
+color brightyellow "[[:<:]](delay|delayMicroseconds|millis|micros)[[:>:]]"
 
 ## Digital I/O
-color brightyellow "\<(pinMode|digitalWrite|digitalRead)\>"
+color brightyellow "[[:<:]](pinMode|digitalWrite|digitalRead)[[:>:]]"
 
 ## Interrupts
-color brightyellow "\<(interrupts|noInterrupts)\>"
+color brightyellow "[[:<:]](interrupts|noInterrupts)[[:>:]]"
 
 ## Advanced I/O
-color brightyellow "\<(noTone|pulseIn|shiftIn|shiftOut|tone)\>"
+color brightyellow "[[:<:]](noTone|pulseIn|shiftIn|shiftOut|tone)[[:>:]]"
 
 ## Serial
-color magenta "\<(Serial|Serial1|Serial2|Serial3|begin|end|peek|read|print|println|available|flush)\>"
+color magenta "[[:<:]](Serial|Serial1|Serial2|Serial3|begin|end|peek|read|print|println|available|flush)[[:>:]]"
 
 ## Structure
-color brightyellow "\<(setup|loop)\>"
+color brightyellow "[[:<:]](setup|loop)[[:>:]]"
 
 ## 
 color brightcyan "^[[:space:]]*#[[:space:]]*(define|include(_next)?|(un|ifn?)def|endif|el(if|se)|if|warning|error|pragma)"

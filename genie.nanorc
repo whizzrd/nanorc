@@ -2,28 +2,28 @@
 syntax "genie" "\.gs$"
 
 # Namespace.
-color magenta "\<(uses|namespace)\>"
+color magenta "[[:<:]](uses|namespace)[[:>:]]"
 
 # Data types.
-color green "\<(bool|byte|char|date|datetime|decimal|double|float|int|long|object|sbyte|short|single|string|ulong|ushort)\>"
+color green "[[:<:]](bool|byte|char|date|datetime|decimal|double|float|int|long|object|sbyte|short|single|string|ulong|ushort)[[:>:]]"
 
 # Definitions.
-color brightred "\<(const|class|construct|def|delegate|enum|exception|extern|event|final|get|init|inline|interface|override|prop|return|set|static|struct|var|virtual|weak)\>"
+color brightred "[[:<:]](const|class|construct|def|delegate|enum|exception|extern|event|final|get|init|inline|interface|override|prop|return|set|static|struct|var|virtual|weak)[[:>:]]"
 
 # Keywords.
-color red "\<(abstract|as|and|break|case|cast|continue|default|delete|div|do|downto|dynamic|else|ensures|except|extern|finally|for|if|implements|in|isa|is|lock|new|not|of|out|or|otherwise|pass|private|raise|raises|readonly|ref|requires|to|try|unless|when|while)\>"
+color red "[[:<:]](abstract|as|and|break|case|cast|continue|default|delete|div|do|downto|dynamic|else|ensures|except|extern|finally|for|if|implements|in|isa|is|lock|new|not|of|out|or|otherwise|pass|private|raise|raises|readonly|ref|requires|to|try|unless|when|while)[[:>:]]"
 
 # Special variables.
-color brightcyan "\<(self|super)\>"
+color brightcyan "[[:<:]](self|super)[[:>:]]"
 
 # Null value.
-color brightyellow "\<(null)\>"
+color brightyellow "[[:<:]](null)[[:>:]]"
 
 # Boolean.
-color yellow "\<(false|true)\>"
+color yellow "[[:<:]](false|true)[[:>:]]"
 
 # Builtin functions.
-color cyan "\<(array|assert|dict|list|max|min|print|prop|sizeof|typeof)\>"
+color cyan "[[:<:]](array|assert|dict|list|max|min|print|prop|sizeof|typeof)[[:>:]]"
 
 # Numbers.
 color brightmagenta "[0-9][0-9\.]*(m|ms|d|h|s|f|F|l|L)?"

@@ -10,13 +10,13 @@ color green "[[:<:]](always|break|bye|case|continue|disown|do|done|elif|else|esa
 
 color green "(\{|\}|\(|\)|\;|\]|\[|`|\\|\$|<|>|!|=|&|\|)"
 ## Conditional flags
-color green "-[Ldefgruwx]\>"
-color green "-(eq|ne|gt|lt|ge|le|s|n|z)\>"
+color green "-[Ldefgruwx][[:>:]]"
+color green "-(eq|ne|gt|lt|ge|le|s|n|z)[[:>:]]"
 
 ## Bash-inherited
 color brightblue "[[:<:]]((un)?alias|bindkey|builtin|cd|command|declare|eval|exec|export|jobs|let|popd|pushd|set|source|typeset|umask|unset)[[:>:]]"
 ## ZSH-specific
-color brightblue "[[:<:]](add-zsh-hook|autoload|cdr|chdir|compinit|dirs|(dis|en)able|echotc|echoti|emulate|print|printf|prompt(init)?|(un)?setopt|zle|zmodload|zstyle|whence|zargs|zmv)\>"
+color brightblue "[[:<:]](add-zsh-hook|autoload|cdr|chdir|compinit|dirs|(dis|en)able|echotc|echoti|emulate|print|printf|prompt(init)?|(un)?setopt|zle|zmodload|zstyle|whence|zargs|zmv)[[:>:]]"
 
 ## Common linux commands
 color brightmagenta "[[:<:]]((g|ig)?awk|find|diff|\w{0,4}grep|kill|killall|\w{0,4}less|make|pkill|sed|sudo|tar)[[:>:]]"

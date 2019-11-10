@@ -88,7 +88,7 @@ include "~/.nano/c.nanorc"
 
 ### MacOS
 
-`\<` and `\>` are regular character escapes on MacOS.  
+`[[:<:]]` and `[[:>:]]` are regular character escapes on MacOS.  
 The bug is fixed in Nano, but this might be a problem if you are using an older version  
 If this is the case, replace them respectively with `[[:<:]]` and `[[:>:]]`.
 This is reported in [Issue 52](https://github.com/scopatz/nanorc/issues/52).
